@@ -1,0 +1,67 @@
+/* ------------------------------------------------------------ *\
+	Section Our Clients
+\* ------------------------------------------------------------ */
+
+.section-our-clients {
+	padding: 60px;
+	text-align: center;
+
+	.subtitle{
+		font-size: 30px;
+		color: $c-sand;
+	}
+
+	.reviews{
+		padding: 40px;
+		@include breakpoint-down(mobile) {
+
+			padding: 40px 0;
+		}
+	}
+	.review{
+		display: block;
+		position: relative;
+		align-items: center;
+		text-align: center;
+		padding-left: 20px;
+		&::after{
+			position: absolute;
+			z-index: -1;
+			top: 0px;
+			right: 50px;
+			height: 50px;
+			content: url('../images/icons/quotes.svg');
+			@include breakpoint-down(mobile) {
+				right: 0;
+				padding: 0;
+			}
+
+		}
+		&__text{
+			font-style: italic;
+			padding: 0 40px;
+		}
+		@include breakpoint-down(mobile) {
+
+			padding: 0;
+			img{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+	}
+
+	.user-image{
+		padding-top: 40px;
+
+	}
+	.username{
+		font-weight: bold;
+		font-style: italic;
+		margin-top: 20px;
+	}
+
+
+}
+

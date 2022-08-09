@@ -1,0 +1,87 @@
+/* ------------------------------------------------------------ *\
+	Section How It works
+\* ------------------------------------------------------------ */
+
+.section-how-it-works {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.section__content {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.section__body {
+			padding: 0 10%;
+			justify-content: center;
+			text-align: center;
+		}
+		@include breakpoint-down(mobile) {
+			padding: 40px 0;
+		}
+	}
+
+	.steps {
+		position: relative;
+		padding-top: 60px;
+		text-align: center;
+		justify-content: center;
+		align-items: baseline;
+		align-content: flex-start;
+		.pictogram {
+			display: block;
+			position: relative;
+			height: 157px;
+			width: 157px;
+			background-color: $c-white;
+			border-radius: 50%;
+			padding: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			span {
+				position: absolute;
+				top: 35%;
+				left: 10%;
+				font-size: 34px;
+				font-weight: bold;
+			}
+			img {
+				position: absolute;
+			}
+			&__1 {
+				left: 45%;
+				top: 30px;
+			}
+			&__2 {
+				left: 25%;
+				top: 40px;
+			}
+			&__3 {
+				left: 25%;
+				top: 30px;
+			}
+		}
+		p {
+			padding: 20px 15%;
+		}
+	}
+
+	.section__title {
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.hw-line {
+		left: -40vh;
+		top: 40%;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding-top: 0;
+
+	}
+}

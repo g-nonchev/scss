@@ -1,0 +1,132 @@
+/* ------------------------------------------------------------ *\
+	Grid
+\* ------------------------------------------------------------ */
+
+.grid__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid__row--nowrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid__column {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.grid__col {
+	width: 100%;
+	flex-basis: 100%;
+	@include breakpoint-down(mobile) {
+		&.mob-50 {
+			width: 50%;
+		}
+	}
+}
+
+.grid__col--1of2 {
+	width: 50%;
+	@include breakpoint-down(mobile) {
+		&.m100 {
+			width: 100%;
+		}
+	}
+}
+.grid__col--1of3 {
+	width: 33.3%;
+	@include breakpoint-down(mobile) {
+		&.m100 {
+			width: 100%;
+		}
+	}
+}
+.grid__col--2of3 {
+	width: 66.6%;
+	@include breakpoint-down(mobile) {
+		&.m100 {
+			width: 100%;
+		}
+	}
+}
+
+.grid__col--1of4 {
+	width: 25%;
+
+	@include breakpoint-down(mobile) {
+		&.m100 {
+			width: 100%;
+		}
+	}
+}
+
+.grid__col--3of4 {
+	width: 75%;
+	@include breakpoint-down(mobile) {
+		&.m100 {
+			width: 100%;
+		}
+	}
+}
+
+.grid__col--1of5 {
+	width: 20%;
+	@include breakpoint-down(mobile) {
+		&.mob-50 {
+			width: 50%;
+		}
+		&.mob-100 {
+			width: 100%;
+		}
+	}
+}
+
+.grid__col--2of5 {
+	width: 40%;
+	@include breakpoint-down(mobile) {
+		&.mob-50 {
+			width: 50%;
+		}
+		&.mob-100 {
+			width: 100%;
+		}
+	}
+}
+
+.grid__col--3of5 {
+	width: 60%;
+	@include breakpoint-down(mobile) {
+		&.mob-50 {
+			width: 50%;
+		}
+		&.mob-100 {
+			width: 100%;
+		}
+	}
+}
+
+.grid__col--4of5 {
+	width: 80%;
+}
+
+.grid__col--1of6 {
+	width: 16.6%;
+}
+
+.grid__col--5of6 {
+	width: 83.4%;
+}
+
+// @include breakpoint-down(mobile) {
+// 	.grid__col--1of2,
+// 	.grid__col--1of3 {
+// 		width: 100%;
+// 	}
+
+// 	.grid__col--1of6 {
+// 		width: 50%;
+// 	}
+// }

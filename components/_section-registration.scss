@@ -1,0 +1,49 @@
+.section-registration {
+	.section__head{
+		padding-bottom: 40px;
+	}
+	.blur-background{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	form {
+		margin: 0 auto;
+
+		label {
+			&:not(.woocommerce-form__label-for-checkbox) {
+				display: none;
+			}
+		}
+
+
+		.form-field__group{
+			padding: 10px;
+		}
+
+		p{
+			margin-bottom: 0;
+		}
+
+	}
+
+	.section-submit{
+		margin-top: 60px;
+		position: relative;
+	}
+	.hw-line {
+		left: -50%;
+		top: 50%;
+
+	}
+}
+
+.page-template-register {
+	.header {
+		.background-container {
+			hr {
+				display: block;
+			}
+		}
+	}
+}

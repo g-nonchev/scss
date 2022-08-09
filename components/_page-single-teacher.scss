@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------ *\
+	Page Single Teacher
+\* ------------------------------------------------------------ */
+.single-teacher {
+	.article__image {
+		margin-left:auto ;
+		margin-right:auto ;
+		width: 70%;
+		padding: 20px;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+		@include breakpoint-down(mobile) {
+			padding: 20px;
+			width: 100%;
+		}
+	}
+
+	.teacher__title{
+		padding: 20px;
+		font-size: 36px;
+	}
+
+	li{
+		list-style: none;
+		color: $c-gold;
+	}
+
+
+	.grid__col--1of2 {
+		text-align: center;
+		padding: 40px;
+		@include breakpoint-down(mobile) {
+			padding: 20px;
+			width: 100%;
+		}
+		.grid__col--3of5 {
+			padding: 20px;
+		}
+	}
+	.teacher__body {
+		font-style: italic;
+	}
+
+	@include breakpoint-down(mobile) {
+		.grid__col--3of5 {
+			font-size: 12px;
+		}
+
+		.grid__col--1of5 {
+			padding: 20px 0;
+			width: 40%;
+		}
+		.grid__col--3of5 {
+			padding: 20px 0;
+			width: 50%;
+		}
+	}
+}

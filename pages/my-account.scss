@@ -1,0 +1,233 @@
+@import "../generic/mixins";
+@import "../generic/variables";
+
+.woocommerce-account {
+    .section__inner {
+
+        p,
+        a,
+        td,
+        tr,
+        address,
+        small {
+            font-family: "Roboto";
+            font-size: 20px;
+            color: #000000;
+        }
+
+    }
+
+    .section__title {
+        border-top: 2px solid #000;
+        padding-bottom: 70px;
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 36px;
+        text-transform: uppercase;
+        padding-top: 73px;
+        background-color: #FEB98A;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .woocommerce-MyAccount-navigation {
+        margin-bottom: 20px;
+        margin-top: 20px;
+		li{
+			padding-bottom: 20px;
+
+		}
+        a {
+			text-decoration: none;
+            font-size: 21px;
+
+
+        }
+		.is-active{
+			padding-bottom: 10px;
+			border-bottom: 2px solid $c-gray;
+		}
+    }
+
+    .woocommerce-Address {
+        a {
+            @include black-button;
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 2.02px;
+            padding: 10px;
+
+        }
+    }
+
+    h3 {
+        font-family: "Roboto";
+        font-weight: normal;
+        font-size: 23px;
+        letter-spacing: 0.78px;
+        color: #000000;
+        opacity: 1;
+        border-bottom: 2px solid #000;
+        padding-bottom: 10px;
+    }
+
+    .woocommerce-address-fields {
+        padding: 15px;
+        button {
+			@include black-button;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+            &:hover {
+
+                color: #fff;
+            }
+        }
+
+        input {
+            font-family: "Roboto";
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .select2-selection {
+           padding: 10px 0px;
+        }
+
+        .select2-selection__rendered {
+            line-height: 13px;
+            height: 20px;
+            font-family: "Roboto";
+            font-size: 18px;
+            color: #000000;
+        }
+    }
+
+    .woocommerce-EditAccountForm {
+
+        span,
+        small,
+        .woocommerce-password-strength {
+            font-family: "Roboto";
+            font-size: 14px;
+            color: #000000;
+        }
+
+        fieldset {
+            padding: 20px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+
+        }
+    }
+
+    .woocommerce-notices-wrapper {
+        border-top-color: #feb98a;
+        font-family: "Roboto";
+        font-size: 20px;
+        color: #ffffff;
+        background: #feb98a;
+
+        .woocommerce-error {
+            font-family: "Roboto";
+            font-size: 20px;
+            color: #ffffff;
+            background:  $c-lighter-gray;
+        }
+
+    }
+
+
+    .woocommerce-orders-table {
+        .woocommerce-button {
+            @include black-button;
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 2.02px;
+
+
+        }
+
+        th, span, td {
+            font-family: "Roboto";
+            font-size: 18px;
+            color: #000000;
+        }
+    }
+
+    label {
+        font: normal normal 300 16px/36px "Roboto";
+        letter-spacing: 0.62px;
+        color: #CECECE;
+        opacity: 1;
+    }
+
+    input,
+    textarea {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #000;
+        color: #000;
+        display: block;
+        width: 100%;
+        padding: 7px 0;
+        margin-bottom: 3
+    }
+
+    .woocommerce-order-details,
+    .woocommerce-customer-details {
+        h2 {
+            font-family: "Roboto";
+            font-weight: normal;
+            font-size: 23px;
+            letter-spacing: 0.78px;
+            color: #000000;
+            opacity: 1;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+
+        table {
+            padding: 15px;
+        }
+
+        address {
+            padding: 20px;
+            font-family: "Roboto";
+            font-size: 18px;
+            color: #000000;
+
+             p {
+                font-family: "Roboto";
+                font-size: 18px;
+                color: #000000;
+             }
+        }
+
+        .shop_table  {
+            th, span, td {
+                font-family: "Roboto";
+                font-size: 18px;
+                color: #000000;
+            }
+
+            th {
+                font-weight: normal;
+            }
+        }
+    }
+}

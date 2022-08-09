@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	Main
+\* ------------------------------------------------------------ */
+
+.main {
+	width: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	@include breakpoint-down(mobile) {
+		width: 100%;
+		margin-left: 0;
+	}
+	@include breakpoint-down(mobile) {
+		margin-top: 42px;
+	}
+}
+
+body.error404 {
+	.main {
+		display: flex;
+		flex-wrap: wrap;
+
+		> section {
+			width: 100%;
+		}
+	}
+}

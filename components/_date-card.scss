@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	Date Card
+\* ------------------------------------------------------------ */
+
+.date-card {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+	border-left: 1px solid $c-gold;
+	border-bottom: 1px solid $c-gold;
+	padding: 10px;
+	margin:0 2px;
+	position: relative;
+	&_year{
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: left;
+		max-width: 40px;
+		padding: 4px 8px;
+		font-size: 10px;
+		background-color: $c-brown;
+		color: $c-base;
+
+	}
+	&_day-n{
+		padding-top: 10px;
+		font-size: 40px;
+	}
+	&_month{
+		font-size: 15px;
+	}
+	&_day-txt{
+		font-size: 20px;
+	}
+
+	&_hour{
+		font-size: 15px;
+	}
+
+}

@@ -1,0 +1,24 @@
+.woocommerce-button {
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $c-white;
+	background: $c-gray;
+	font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+	-webkit-box-shadow: 2px 2px 8px -2px #000000;
+	box-shadow: 2px 2px 8px -2px #000000;
+	&:hover{
+		-webkit-box-shadow: 2px 2px 8px -1px #000000;
+		box-shadow: 2px 2px 8px -1px #000000;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+}

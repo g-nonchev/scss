@@ -1,0 +1,106 @@
+.slogan {
+	color: $c-human;
+	font-size: 3em;
+	font-family: "GoodVibesPro";
+	font-weight: 100;
+	margin-bottom: 20px;
+	@include breakpoint-down(mobile) {
+		font-size: 1.5em;
+	}
+}
+
+.slider {
+	padding: 5%;
+	.box-col {
+		position: relative;
+		float: right;
+		@include breakpoint-down(mobile) {
+			margin-top: -50px;
+		}
+		.stamp {
+			position: absolute;
+			z-index: 1;
+			left: 12%;
+			width: 242px;
+			height: 186px;
+			@include breakpoint-down(mobile) {
+				left: 5%;
+				top:15%;
+				width: 100px;
+				height: 75px;
+			}
+		}
+
+	}
+
+	&__txt {
+		display: block;
+		@include breakpoint-down(mobile) {
+			margin-top: -10%;
+		}
+	}
+
+	h1 {
+		font-size: 2.8em;
+		// line-height: 3.3em;
+		font-weight: bold;
+		@include breakpoint-down(mobile) {
+			font-size: 2.1em;
+			line-height: 1em;
+		}
+	}
+
+	h3 {
+		font-size: 1.5em;
+		font-weight: 100;
+		@include breakpoint-down(mobile) {
+			font-size: 1em;
+			line-height: 1.1em;
+		}
+	}
+
+	&__links {
+		margin-right: 25%;
+		position: relative;
+		padding-top: 60px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		@include breakpoint-down(mobile) {
+			margin-right: 0;
+			padding-top: 30px;
+		}
+
+		.btn {
+			font-size: 1.5em;
+			line-height: 1.8em;
+			letter-spacing: 0.1em;
+			@include breakpoint-down(mobile) {
+				font-size: 1.3em;
+				line-height: 1.1em;
+			}
+		}
+		.grid__col {
+			position: relative;
+			text-align: center;
+		}
+		.info {
+			display: flex;
+			margin-top: 10px;
+			span {
+				margin: 10px;
+				font-size: 1em;
+				line-height: 1.3em;
+			}
+		}
+	}
+	.hw-line {
+		left: -80%;
+		top: 50%;
+		@include breakpoint-down(mobile) {
+			width: 100vw;
+			left: 0;
+		}
+	}
+}

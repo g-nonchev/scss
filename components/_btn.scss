@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------ *\
+	Btn
+\* ------------------------------------------------------------ */
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	appearance: none;
+	color: $c-white;
+	background: $c-gray;
+	font-weight: 500;
+    cursor: pointer;
+    font-size: 1em;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+	@include breakpoint-down(mobile) {
+		font-size: 0.8em;
+	}
+
+	&:hover {
+		box-shadow: 2px 2px 8px -1px #000000;
+	}
+
+	&.btn-alt {
+		border: 1px solid $c-black;
+		min-width: 150px;
+		background-color: transparent;
+		color: $c-black;
+
+		&:hover {
+			background-color: $c-black;
+			color: $c-white;
+			background-image: none;
+		}
+	}
+}
+
+/* Btn Block */
+
+.btn--block {
+	display: block;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.wp-block-button:hover{
+	opacity: 0.9;
+}

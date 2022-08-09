@@ -1,0 +1,47 @@
+.accordion{
+	.closed{
+
+
+	}
+	.open{
+		border: 1px solid #CB8B74;
+
+	}
+
+	.ac{
+		margin-bottom: 20px;
+		border: 1px solid #D0D0D0;
+		background-color: #FAFAFA;
+		&-header{
+			padding:5px 20px;
+		}
+		&-trigger{
+			font: normal 20px "Roboto", sans-serif;
+			color: #3A3A3A;
+		}
+		&-panel{
+
+			.ac-text{
+				padding:10px 30px 30px 30px;
+				font: normal 20px "Roboto", sans-serif;
+			}
+		}
+	}
+	.is-active{
+		background-color: $c-white;
+		border: 1px solid #CB8B74;
+
+		.ac-trigger{
+			text-decoration: underline;
+			p{
+				font: bold 20px "Roboto", sans-serif;
+				color: #3A3A3A;
+			}
+			// .ac-heading{
+			// 	padding: 10px 0;
+			// 	border-bottom: 1px solid #D0D0D0;
+			// }
+
+		}
+	}
+}

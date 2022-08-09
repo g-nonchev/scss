@@ -1,0 +1,71 @@
+/* ------------------------------------------------------------ *\
+	Section Monthly Box
+\* ------------------------------------------------------------ */
+
+.section-m-box {
+	&__down {
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+		position: relative;
+	}
+	position: relative;
+	.box {
+		display: block;
+
+		height: auto;
+		position: absolute;
+		margin-left: -10%;
+		@include breakpoint-down(mobile) {
+			flex-basis: 100%;
+			top: 40%;
+			left: -20%;
+
+		}
+	}
+	.btn {
+		margin-top: 40px;
+	}
+	.m_box_image {
+		float: right;
+		position: relative;
+		margin-top: -25px;
+		z-index: -1;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		.hw-line {
+			left: 0;
+			top: -2px;
+		}
+	}
+	.grid__col--1of3 {
+		align-self: flex-end;
+	}
+	.custom-links {
+
+		flex-direction: column;
+		text-transform: uppercase;
+
+		// text-align: center;
+
+		a {
+			font-size: 0.8em;
+			line-height: 1em;
+			padding: 10px;
+			text-decoration: none;
+		}
+		.grid__col{
+			margin-top: 10px;
+		}
+
+
+		@include breakpoint-down(mobile) {
+			padding: 20px 0;
+			.grid__col{
+				margin-bottom: 10px;
+			}
+
+		}
+	}
+}

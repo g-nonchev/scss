@@ -1,0 +1,132 @@
+.socials {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	flex-basis: 100px;
+
+	li {
+		// display: inline-block;
+		// background-color: $c-pink;
+		// padding: 5px;
+		// border-radius: 50%;
+		// margin-top: 30px;
+
+		+ li {
+			// margin-left: 5px;
+		}
+
+		&:hover {
+			img {
+				opacity: 1;
+			}
+		}
+		@include breakpoint-down(mobile) {
+
+		}
+	}
+
+	a {
+		display: block;
+		width: 60px;
+		height: 60px;
+		position: relative;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 40px;
+
+			+ img {
+				opacity: 0;
+			}
+		}
+	}
+
+}
+
+.contacts {
+	// margin: 0 20px;
+	.grid__row {
+		align-items: center;
+		// justify-content: space-around;
+		// text-align: center;
+
+		p {
+			padding-left: 10px;
+			font-size: 14px;
+			// text-align: right;
+		}
+		+ .grid__row {
+			margin-bottom: 25px;
+		}
+	}
+
+	a {
+		display: block;
+		// width: 28px;
+		// height: 28px;
+		position: relative;
+		margin: 10px 0;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 100%;
+			max-height: 100%;
+			width: 90%;
+			height: 90%;
+
+			+ img {
+				opacity: 0;
+			}
+		}
+	}
+	#open_mail {
+		img {
+			width: 100%;
+			height: 100%;
+
+			+ img {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.social-share {
+	@media (min-width: 768px) {
+		max-width: 100%;
+	}
+	max-width: 100%;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	width: 100%;
+	.share-on {
+		@media (min-width: 768px) {
+			width: 100%;
+		}
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		width: 100%;
+		max-width: 25%;
+		color: $c-gray;
+		padding-top: 8px;
+		font-size: 20px;
+	}
+}
+
+
+
+.social__tags {
+	color: $c-gray;
+	font-size: 1.5em;
+	margin: 10px;
+	@include breakpoint-down(mobile) {
+		font-size: 1em;
+		justify-content: space-around;
+	}
+}

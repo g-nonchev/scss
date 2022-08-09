@@ -1,0 +1,45 @@
+/* ------------------------------------------------------------ *\
+	Section Inside Box
+\* ------------------------------------------------------------ */
+
+.section-inside-box {
+	position: relative;
+
+	.row-reverse {
+		flex-direction: row-reverse;
+		@include breakpoint-down(mobile) {
+			flex-direction: row;
+		}
+	}
+	.image {
+		position: relative;
+	}
+	.stamp {
+		position: absolute;
+		z-index: 1;
+		top: 35%;
+		left: -20%;
+		width: 242px;
+		height: 186px;
+		@include breakpoint-down(mobile) {
+			width: 121px;
+			height: 93px;
+		}
+	}
+	.text-center {
+		padding: 40px 0;
+	}
+
+	.btn {
+		margin-top: 40px;
+	}
+
+	.description {
+		.grid__col--2of3 {
+			padding-left: 30px;
+		}
+		@include breakpoint-down(mobile) {
+			margin-bottom: 40px;
+		}
+	}
+}

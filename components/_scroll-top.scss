@@ -1,0 +1,23 @@
+/* ------------------------------------------------------------ *\
+	Scroll top
+\* ------------------------------------------------------------ */
+#scrollTop {
+	z-index: 9999;
+	position: relative;
+}
+
+.scroll-top {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	bottom: 50px;
+	right: 15px;
+	background-color: $c-base;
+	padding: 10px;
+	border-radius: 50%;
+
+	img {
+		height: 30px;
+		width: 30px;
+	}
+}

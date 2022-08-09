@@ -1,0 +1,123 @@
+.checkout-page {
+	h2 {
+		padding-left: 15px !important;
+		font-size: 1.5em;
+	}
+	#billing_country_field {
+		display: none;
+	}
+	.woocommerce-billing-fields {
+		display: inline;
+	}
+	.woocommerce-shipping-fields {
+		padding: 3px;
+	}
+	.shop_table {
+		border: 2px solid $c-gray !important;
+		border-radius: 0 !important;
+		th {
+			border: none;
+		}
+	}
+
+	.prive-checkout {
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		&__left {
+			-ms-flex: 0 0 40%;
+			flex: 0 0 40%;
+			max-width: 40%;
+			position: relative;
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			// background-color: #feb98a;
+		}
+
+		&__right {
+			-ms-flex: 0 0 60%;
+			flex: 0 0 60%;
+			max-width: 60%;
+			position: relative;
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+
+			.woocommerce-billing-fields {
+				&__field-wrapper {
+					display: flex;
+					-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+				}
+				&_heading {
+					-ms-flex: 0 0 100%;
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+				&_first-name,
+				&_last-name,
+				&_phone,
+				&_email,
+				&_country,
+				&_zip {
+					-ms-flex: 0 0 25%;
+					flex: 0 0 25%;
+					max-width: 25%;
+					padding-bottom: 50px;
+					padding-right: 50px;
+				}
+				&_address {
+					-ms-flex: 0 0 50%;
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+				&_country {
+					display: none;
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+	.woocommerce-checkout-review-order-table {
+		background-color: $c-cart-title-back;
+
+		thead {
+			background-color: $c-cart-title-back;
+		}
+	}
+	.coupon {
+		display: flex;
+		border: 2px solid $c-gray;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		.input-text {
+			width: 66.6% !important;
+		}
+	}
+	.fields {
+		margin-top: -27%;
+		padding: 0 30px;
+		@include breakpoint-down(mobile) {
+			margin-top: 20px;
+			padding: 0;
+		}
+	}
+
+	.checkout {
+		@include breakpoint-down(mobile) {
+			flex-direction: column-reverse;
+		}
+	}
+	.woocommerce-checkout-payment {
+		border: 2px solid $c-gray;
+		border-radius: 0 !important;
+		background-color: $c-white !important;
+	}
+	.place-order {
+		// position: relative;
+		.btn {
+			margin-top: 40px;
+		}
+	}
+}

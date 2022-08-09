@@ -1,0 +1,20 @@
+/* ------------------------------------------------------------ *\
+	Section Box page Order
+\* ------------------------------------------------------------ */
+
+.section-box-page-order {
+	padding-top: 60px;
+	.image{
+		padding-bottom: 40px;
+	}
+	.product-description{
+		// padding-bottom: 60px;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 20px 0;
+		.grid__col {
+			margin-bottom: 10px;
+		}
+	}
+}

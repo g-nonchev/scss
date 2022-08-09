@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	Logo
+\* ------------------------------------------------------------ */
+
+.logo {
+	width: 170px;
+	height: 45px;
+	// position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 28px;
+    font-family: $ff-serif;
+    // border-bottom: 1px solid $c-brown;
+	> svg {
+		padding: 10px 0;
+		display: block;
+		width: 170px;
+		height: 45px;
+		@include breakpoint-down(mobile) {
+
+			height: 60px;
+		}
+	}
+	@include breakpoint-down(mobile) {
+		vertical-align: top;
+		margin-left: 20px;
+		border-bottom: none;
+		height: 60px;
+	}
+
+}

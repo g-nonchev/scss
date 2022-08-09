@@ -1,0 +1,43 @@
+/* ------------------------------------------------------------ *\
+	Page Single Event
+\* ------------------------------------------------------------ */
+.single-event {
+
+
+	.grid__col--1of2{
+		padding: 40px;
+		@include breakpoint-down(mobile) {
+			padding: 0;
+			width: 100%;
+		}
+		.grid__col--3of5{
+			padding: 20px;
+		}
+
+	}
+	.event__body{
+		padding: 40px;
+		@include breakpoint-down(mobile) {
+			padding: 20px;
+		}
+	}
+
+	@include breakpoint-down(mobile) {
+
+		.grid__col--3of5{
+			font-size: 12px;
+		}
+
+		.grid__col--1of5{
+			padding: 20px 0;
+			width: 40%;
+		}
+		.grid__col--3of5
+		{
+			padding: 20px 0;
+				width: 50%;
+		}
+	}
+
+
+}

@@ -1,0 +1,149 @@
+.icon-cart {
+	position: relative;
+	// padding: 20px;
+	&__counter {
+		position: absolute;
+		top: 5px;
+		right: -2px;
+		background-color: $c-sand;
+		color: $c-gray;
+		font-size: 12px;
+		font-weight: bold;
+		border-radius: 50%;
+		padding: 4px 7px 2px 7px;
+	}
+}
+
+// .woocommerce table.shop_table {
+// 	border: none !important;
+// }
+
+// .woocommerce table.shop_table td {
+// 	border: none !important;
+// }
+
+.woocommerce-cart {
+	table {
+		&.cart {
+			img {
+				width: 100px;
+			}
+		}
+	}
+	td {
+		border-top: 1px solid $c-lighter-gray;
+	}
+
+	.woocommerce-cart-form__cart-item {
+		.product-thumbnail {
+			margin: 30px;
+		}
+
+		.product-name {
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	.cart {
+		&-checkout {
+			margin-top: 30px;
+			flex: 0 0 100%;
+			max-width: 100%;
+			position: relative;
+			width: 100%;
+			&::after {
+				z-index: -1;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: 100%;
+				content: "";
+				border-top: 2px solid $c-black;
+			}
+		}
+	}
+	.order-total {
+		display: none;
+		&_txt {
+			font-family: "Roboto";
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+	}
+	.woocommerce-Price-amount {
+		font-family: "Roboto";
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+	.cart_totals {
+		float: right;
+		text-align: right;
+		h2 {
+			display: none;
+		}
+	}
+
+	.cart-subtotal {
+		float: right;
+		.amount {
+			margin-left: 15px;
+		}
+
+	}
+}
+
+.woocommerce-cart-form {
+	&__contents {
+		border: none;
+	}
+}
+
+.cart-clear__btn {
+	padding: 20px;
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-image: url("../images/trash.svg");
+	&:hover {
+		background-image: url("../images/trash-hover.svg");
+	}
+}
+
+.m_page-title {
+	margin-top: 73px;
+	background-color: #feb98a;
+	text-align: center;
+
+	.shell {
+		border-top: 2px solid #000;
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	h1 {
+		font-family: "Roboto";
+		font-weight: 400;
+		font-size: 36px;
+		text-transform: uppercase;
+		padding-top: 5px;
+	}
+
+	.ez-header-separator {
+		position: absolute;
+		left: 50%;
+		width: 2px;
+		height: 70px;
+		background-color: #000;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		top: 0px;
+	}
+}
+
+.shop_table_responsive{
+	.order-total {
+		display: none !important;
+	}
+}

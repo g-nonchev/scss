@@ -1,0 +1,28 @@
+.hw-line {
+	display:none;
+	position: absolute;
+	background-color: $c-gray;
+	z-index: -1;
+	height: 2px;
+	width:  0;
+	// border: 2px solid $c-gray;
+}
+
+.draw{
+	animation: draw 4s;
+	// animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes draw {
+	100% {
+		width: 80vw;
+	}
+}
+
+
+// @media (prefers-reduced-motion) {
+// 	.draw {
+// 	  animation-name: dissolve;
+// 	}
+//   }

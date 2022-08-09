@@ -1,0 +1,47 @@
+.section-newsletter {
+	text-align: center;
+
+	.prive-icon {
+		height: 95px;
+		// position: absolute;
+		// left: 30%;
+		margin-top: -45px;
+		margin-bottom: 5%;
+	}
+
+
+
+	.section__content{
+		// text-align: center;
+		// padding: 45px 0;
+	}
+	/* CF7 Inline Button */
+	.cf7column {
+		float: left;
+		width: 50%;
+	}
+
+	.newsletter-form {
+		padding: 60px 0;
+		.grid__row {
+			// align-items: center;
+		}
+		.grid__row {
+			&::after {
+
+				content: "";
+				display: table;
+				clear: both;
+			}
+		}
+		input[type="email"]{
+			// margin-top: 10px;
+			padding: 19px;
+		}
+		.form-btn{
+			width: 100%;
+			padding: 20px;
+		}
+	}
+	/* Clear floats after the columns */
+}

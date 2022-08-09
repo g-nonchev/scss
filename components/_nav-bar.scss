@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	NavBar
+\* ------------------------------------------------------------ */
+
+.nav-bar {
+	align-items: center;
+	border-bottom: 2px solid $c-gray;
+	height: 130px;
+	display: flex;
+	position: relative;
+	width: 100%;
+
+	.custom-links {
+		padding-top: 10px;
+		display: flex;
+		align-items: center;
+		justify-content:flex-end;
+		a {
+			padding: 10px;
+
+		}
+		@include breakpoint-down(mobile) {
+			justify-content: start;
+			bottom: 10%;
+			width: 80%;
+		}
+	}
+	@include breakpoint-down(mobile) {
+		// height: 100vh;
+	}
+
+}

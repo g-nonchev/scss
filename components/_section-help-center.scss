@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------ *\
+	Section section-help-center
+\* ------------------------------------------------------------ */
+
+.section-help-center {
+
+	.section__title {
+		margin-bottom: 80px;
+		@include breakpoint-down(mobile) {
+			margin-bottom: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.nav{
+		@include breakpoint-down(mobile) {
+			padding: 22px;
+		}
+
+	}
+
+	.section__content{
+		margin-bottom: 40px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.menu{
+		flex-direction: column;
+		li{
+			margin-bottom: 10px;
+		}
+		.current_page_item {
+			a {
+				padding-bottom: 10px;
+				border-bottom: 2px solid $c-black ;
+
+			}
+		}
+
+	}
+
+}
+
+/* Section Default 404 */
+
+.section-default--404 {
+	display: flex;
+	width: 100%;
+	text-align: center;
+
+	.section__shell {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.section__btn {
+		margin-top: 20px;
+	}
+}

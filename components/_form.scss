@@ -1,0 +1,66 @@
+form {
+	color: $c-gray;
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	.input-text,
+	.select2-container--default .select2-selection--single {
+		background-color: $c-white;
+		border-radius: 0;
+		border: 1px solid $c-lighter-gray;
+		width: 100%;
+		padding: 7px 15px;
+		&:focus {
+			&::placeholder {
+				font-size: 14px;
+			}
+		}
+
+		&::placeholder {
+			// color: color($c-dbrown a(50%));
+			color: $c-gray;
+		}
+	}
+	textarea {
+		border: 1px solid $c-gray;
+	}
+
+	[type="submit"] {
+		padding: calc(0.667em + 2px) calc(1.333em + 2px);
+		background-color: $c-gray;
+		color: $c-white;
+		border: none;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+.form-header {
+	margin-bottom: 60px;
+
+	.form-title {
+		margin-bottom: 20px;
+		font-size: 40px;
+		font-weight: 400;
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 30px;
+		font-family: "Roboto";
+	}
+}
+
+.wpcf7 {
+	.wpcf7-form {
+		&.invalid {
+			.wpcf7-response-output {
+				color: #dc3232;
+				border-color: #dc3232;
+			}
+		}
+	}
+}

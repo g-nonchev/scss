@@ -1,0 +1,54 @@
+@import '../generic/mixins';
+@import '../generic/variables';
+
+.tax-ez_product_artist {
+    .section__artist {
+        background-color: #FEB98A;
+        position: relative;
+        top: -20px;
+        text-align: center;
+        padding: 50px;
+
+        >p {
+            display: none;
+        }
+
+        img {
+            max-width: 230px;
+            max-height: 230px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .categories-link {
+            .artist-cat-link {
+                text-align: center;
+                font-family: "Roboto";
+                font-size: 32px;
+                font-weight: normal;
+                color: #000000;
+                text-decoration: none;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: inline-block;
+            }
+        }
+
+        .term-description {
+            max-width: 800px;
+            margin: 0 auto;
+
+            p {
+                text-align: center;
+                font-family: "Roboto";
+                font-weight: 300;
+                font-size: 21px;
+            }
+        }
+
+        .prdctfltr_wc {
+            display: none !important;
+        }
+    }
+}
+

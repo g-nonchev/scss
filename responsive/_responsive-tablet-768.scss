@@ -1,0 +1,208 @@
+@media (min-width: 426px) and (max-width: 768px) {
+    .woocommerce {
+        #motiva-products_wrapper {
+            .prdctfltr_filter_wrapper {
+                .prdctfltr_filter {
+                    .prdctfltr_regular_title {
+                        border-left: none;
+                        border-bottom: 1px solid #f4efef;
+                    }
+                }
+            }
+        }
+    }
+
+    .m-contact-us-section {
+        .section__inner {
+            .section__content {
+                .section__body-wrapper {
+                    flex-direction: column;
+
+                    &_contact-form {
+                        max-width: none;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
+
+                    &_contact-info {
+                        padding-left: 0px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+
+                        &_row {
+                            &::before {
+                                content: '';
+                                width: 2px;
+                                height: 70px;
+                                background-color: #000;
+                                -webkit-transform: translateX(-50%);
+                                -ms-transform: translateX(-50%);
+                                transform: translateX(-50%);
+                                margin: 0 auto;
+                            }
+
+                            flex-direction: column;
+                            text-align: center;
+
+                            &-img {
+                                width: 80px;
+                                height: 55px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // My account
+
+    .woocommerce-account {
+        .woocommerce-MyAccount-navigation {
+            font-size: 18px;
+
+            li {
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+        }
+
+        .section__inner {
+
+            p,
+            a,
+            td,
+            tr,
+            address,
+            small {
+                font-size: 18px;
+            }
+
+        }
+
+        .woocommerce-MyAccount-content {}
+
+        .woocommerce-orders-table__row {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .woocommerce-Addresses {
+            .woocommerce-Address {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .woocommerce-customer-details {
+            .woocommerce-column {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    // BLOG 
+    .blog {
+        .prdctfltr_filter_wrapper {
+            .prdctfltr_filter {
+                .prdctfltr_regular_title {
+                    border-left: none;
+                    border-bottom: 1px solid #f4efef;
+                }
+            }
+        }
+
+        .articles__item-row {
+            .article__image {
+                padding:20px;
+            }
+        }
+
+        .article__title {
+            font-size: 32px;
+        }
+
+        .social-share {
+
+            .share-on {
+                position: relative;
+                display: inline-block;
+                min-width: 200px;
+                padding-bottom: 10px;
+            }
+
+            .share-box {
+                flex: auto;
+                max-width: 20%;
+
+                a {
+                    padding: 13px;
+                }
+            }
+        }
+
+        .article__entry {
+            margin-top: 10px;
+
+            p {
+                font: normal normal 300 25px "Apercu";
+            }
+        }
+
+        .article__read-more {
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+
+    .single-post {
+        .article__title {
+            font-size: 32px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+
+        .article__body {
+            padding: 5px;
+        }
+
+        .article__excerpt,
+        .article__entry {
+            margin-top: 10px;
+
+            p {
+                font: normal normal 300 23px "Apercu";
+            }
+        }
+
+        .article--right {
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-bottom: 100px;
+        }
+
+        .article-standart {
+            .article__share {
+                width: auto; 
+            }
+        }
+
+        .social-share {
+
+            .share-box {
+                flex: auto;
+                max-width: 15%;
+
+                a {
+                    max-width: 15%;
+                }
+            }
+        }
+    }
+}

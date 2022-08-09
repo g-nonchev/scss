@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------ *\
+	Icons
+\* ------------------------------------------------------------ */
+
+#icon {
+	&-cart {
+		height: 28px;
+		width: 20px;
+		fill: $c-gray;
+	}
+
+	&-search{
+		height: 22px;
+		width: 22px;
+		fill: $c-gray;
+	}
+	&-user{
+		height: 26px;
+		width: 22px;
+		fill: $c-gray;
+	}
+
+	&-login{
+		height: 25px;
+		width: 22px;
+		fill: $c-gray;
+	}
+
+	&-logout{
+		height: 25px;
+		width: 26px;
+		fill: $c-gray;
+	}
+
+	&-delivery{
+		height: 20px;
+		width: 26px;
+		fill: $c-white;
+	}
+
+	&-creme{
+		height: 22px;
+		width: 25px;
+		fill: $c-white;
+	}
+
+	&-vegan{
+		height: 20px;
+		width: 22px;
+		fill: $c-white;
+	}
+
+	&-prive{
+		height: 90px;
+		width: 95px;
+		fill: $c-gray;
+	}
+
+
+}

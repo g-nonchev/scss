@@ -1,0 +1,84 @@
+.section-login {
+	padding-right: 20px;
+	.blur-background {
+		padding: 40px;
+	}
+	form {
+		margin: 0 auto;
+
+		> p {
+			&:first-child {
+				text-align: center;
+				font-family: "Roboto";
+				color: $c-gray;
+				// margin-bottom: 40px;
+				font-size: 56px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+
+		input {
+			&:active,
+			&:focus {
+				background-color: $c-orange;
+			}
+		}
+	}
+
+	.woocommerce-notices-wrapper {
+		min-height: 54px;
+	}
+
+	.woocommerce-form-login__rememberme {
+		display: block;
+		margin: 20px auto;
+	}
+
+	.woocommerce-form-login__submit {
+		min-width: 250px;
+		margin: 10px auto;
+	}
+
+	.section__content {
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	.lost_password {
+		text-transform: uppercase;
+	}
+
+	.form-row {
+		&.form-row-first,
+		&.form-row-last {
+			text-align: left;
+		}
+	}
+
+	/*@include breakpoint-down(small-desktop) {*/
+	@media only screen and (max-device-width: 1200px) {
+		min-height: 700px;
+	}
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+		min-height: calc(calc(100vh - 73px) - 73px);
+	}
+
+	@media only screen and (max-device-width: 767px) {
+		padding-top: 20px;
+		min-height: 650px;
+
+		.section__content {
+			margin-top: 10px;
+		}
+
+		.woocommerce-form-login__rememberme {
+			margin: 12px auto;
+		}
+
+		.woocommerce-form-login__submit {
+			margin: 6px auto;
+		}
+	}
+}

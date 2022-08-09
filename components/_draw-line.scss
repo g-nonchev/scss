@@ -1,0 +1,32 @@
+
+.draw-line{
+	position: relative;
+	svg{
+		top: 50%;
+		right: 12%;
+		z-index: -1;
+		position: absolute;
+	}
+}
+
+.animline {
+	fill: none;
+	stroke: $c-gray;
+	stroke-width: 2;
+	animation: expand-from-centre 4s linear forwards;
+  }
+
+
+
+  @keyframes expand-from-centre
+  {
+	from {
+	  stroke-dasharray: 0 600;
+	  stroke-dashoffset: -650;
+	}
+
+	to {
+	  stroke-dasharray: 600 600;
+	  stroke-dashoffset: 0;
+	}
+  }

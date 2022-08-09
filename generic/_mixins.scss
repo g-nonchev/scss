@@ -1,0 +1,145 @@
+@mixin clearfix {
+	content: '';
+	line-height: 0;
+	display: table;
+	clear: both;
+}
+
+@mixin breakpoint-up($name, $breakpoints: $breakpoints) {
+	$min: breakpoint-min($name, $breakpoints);
+
+	@media (min-width: $min) {
+		@content;
+	}
+}
+
+@mixin breakpoint-down($name, $breakpoints: $breakpoints) {
+	$max: breakpoint-max($name, $breakpoints);
+
+	@if $max == 767px {
+		@media (max-width: $max), screen and (max-width: $responsive-ios) and (orientation: landscape) {
+			@content;
+		}
+	} @else {
+		@media (max-width: $max) {
+			@content;
+		}
+	}
+}
+
+@mixin breakpoint-between($lower, $upper, $breakpoints: $breakpoints) {
+	$min: breakpoint-min($lower, $breakpoints);
+	$max: breakpoint-max($upper, $breakpoints);
+
+	@media (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}
+
+
+//buttons
+
+@mixin black-button {
+	display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 16px;
+    color: #fff;
+    background: #000;
+    padding: 15px;
+}
+
+@mixin button-hover {
+	background-image: -webkit-gradient(linear, left top, right top, from(#A6E4FF), to(#FEB98A));
+    background-image: -o-linear-gradient(left, #A6E4FF, #FEB98A);
+    background-image: linear-gradient(to right, #A6E4FF, #FEB98A);
+}
+
+@mixin orange-button {
+	background: #FEB98A 0% 0% no-repeat padding-box;
+	color: #000;
+	display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+	font-family: "Roboto";
+	font-size:16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2.02px;
+	color: #000000;
+	padding: 15px;
+	width: 250px;
+}
+
+
+
+/* example usage*/
+
+// @include breakpoint-up(mobile) {
+//  @content
+// }
+// @include breakpoint-up(mobile) {
+//  @content
+// }
+// // @include breakpoint-between(mobile,tablet) {
+//  @content
+// }
+
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family:quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}

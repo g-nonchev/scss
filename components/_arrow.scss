@@ -1,0 +1,19 @@
+.arrow {
+	height: 60px;
+    width: 80px;
+    margin: 0px 0 0 -40px;
+    line-height: 60px;
+    position: absolute;
+    left: 49.85%;
+    bottom: 0px;
+    color: $c-gold;
+    text-align: center;
+    font-size: 70px;
+    z-index: 100;
+    text-decoration: none;
+    -webkit-animation: 2s ease-in-out infinite;
+    animation: 2s ease-in-out infinite;
+	&.down {
+		transform: rotate(45deg);
+	}
+}

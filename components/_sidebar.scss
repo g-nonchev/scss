@@ -1,0 +1,126 @@
+/* ------------------------------------------------------------ *
+	Sidebar Nav
+\* ------------------------------------------------------------ */
+
+.sidebar {
+    width: $navbar-w;
+    height: 100%;
+	position: fixed;
+	z-index: 999;
+	padding: 20px 0;
+	background-color: $c-dbrown;
+
+	.shell{
+		margin-top: 20px;
+		background-color: $c-dbrown;
+		@include breakpoint-down(mobile) {
+			margin-top: 0px;
+		}
+	}
+
+	&.nav-active {
+		height: 72px;
+		width: 100%;
+		.nav-full-screen {
+			display: block;
+		}
+
+		.background-container {
+			background-color: $c-base;
+
+			hr {
+				display: block !important;
+			}
+		}
+	}
+
+	&:after {
+		content: '';
+		visibility: hidden;
+		position: absolute;
+		bottom: 0;
+		left: calc(calc(100% - #{$container-max-width}) / 2);
+		width: #{$container-max-width};
+		height: 2px;
+		background-color: $c-black;
+	}
+
+	.shell {
+		z-index: 2;
+	}
+
+	.background-container {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 0;
+		width: 100%;
+		background-color: $c-white;
+		max-height: 100%;
+
+		hr {
+			display: none;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			height: 2px;
+			border: 0;
+			margin: 0;
+			width: calc( #{$container-max-width} + #{$container-gutter} * 2);
+			max-width: calc(100% - #{$container-gutter} * 2);
+			background-color: $c-black;
+			margin: 0 auto;
+			transform: translateX(-50%)
+		}
+	}
+
+	.sidebar-head{
+		padding: 5px;
+		@include breakpoint-down(mobile) {
+			display: flex;
+			justify-content: space-between;
+			align-items:flex-start;
+		}
+	}
+
+	.navigation{
+		background-color: $c-dbrown;
+		height: 100vh;
+		margin-top: -10px;
+
+		@include breakpoint-down(mobile) {
+			padding: 20px;
+			&:not(.nav-active) {
+				display: none;
+			}
+		}
+	}
+	@include breakpoint-down(mobile) {
+		width: 100%;
+		height: 42px;
+		padding: 0;
+	}
+
+}
+
+
+
+/* ------------------------------------------------------------ *\
+	Admin Bar (if header is fixed)
+\* ------------------------------------------------------------ */
+
+/*remove comments for fixed header*/
+
+body.admin-bar {
+	#wpadminbar {
+		position: fixed;
+	}
+
+	/*.header {
+		margin-top: 32px;
+
+		@include breakpoint-down(admin-bar){
+			margin-top: 46px;
+		}
+	}*/
+}

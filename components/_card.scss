@@ -1,0 +1,21 @@
+.card {
+	position: relative;
+	text-align: center;
+	padding: 20px;
+
+	&__text {
+		color: $c-base;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		a{
+			padding: 5px 20px;
+			// background-color: $c-dbrown;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 14px;
+			text-shadow: 1px 1px 2px $c-dbrown, 0 0 1em black, 0 0 0.2em black;
+		}
+	}
+}

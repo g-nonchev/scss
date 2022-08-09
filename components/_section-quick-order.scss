@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------ *\
+	Section Quick Order
+\* ------------------------------------------------------------ */
+
+.section-quick-order {
+	.container {
+		padding: 60px;
+		@include breakpoint-down(mobile) {
+			padding: 30px 0 0 0;
+		}
+	}
+	.m100 {
+		padding: 10px;
+		justify-content: center;
+	}
+
+	.acceptance {
+		padding: 40px 0;
+		text-align: left;
+		display: inline-flex;
+		align-content: center;
+	}
+	.acceptance--text {
+		padding-left: 30px;
+	}
+	input[type="checkbox"] {
+		background-size: 30px;
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 30px;
+		padding-top: 10px;
+	}
+	.btn-submit{
+		padding: 10px;
+		.wpcf7-submit {
+			margin-left: 60px;
+
+			@include breakpoint-down(mobile) {
+				margin-left: 0px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.quick-order__form {
+	// text-align: center;
+	justify-content: space-between;
+	padding: 20px;
+
+	span {
+		float: left;
+		// text-align: left;
+	}
+}

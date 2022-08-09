@@ -1,0 +1,96 @@
+.modal {
+	background-color: color($c-black a(80%));
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 102;
+	padding: 5% 10%;
+
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+  	visibility: visible;
+  	transition: opacity 0.5s;
+
+	&-img {
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		@include breakpoint-down(mobile) {
+			height: 20%;
+		}
+	}
+
+	&:not(.active) {
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 0.5s, visibility 0s 0.5s;
+	}
+
+	h2{
+		font-size: 1.5em;
+		margin-bottom: 15px;
+	}
+
+	.section__content {
+
+		height: 85%;
+		background-color: $c-white;
+		@include breakpoint-down(mobile) {
+			width: 100%;
+		}
+	}
+	/* CF7 Inline Button */
+	.cf7column {
+		float: left;
+		width: 50%;
+	}
+
+	.newsletter-form {
+		display: flex;
+		text-align: left;
+		flex-direction: column;
+		align-items: center;
+		align-content: flex-end;
+		justify-content: space-between;
+		position: relative;
+		padding: 5%;
+		@include breakpoint-down(mobile) {
+
+			height: 75%;
+		}
+		.prive-icon {
+			// position: absolute;
+			height: 90px;
+			margin-top: -85px;
+			margin-bottom: 25px;
+		}
+		p {
+			// padding: 0 20px;
+		}
+		form {
+			// margin-top: 20px;
+		}
+		.grid__row {
+			&::after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		}
+		input[type="email"] {
+			// margin-top: 10px;
+			padding: 19px;
+		}
+		.form-btn {
+			width: 100%;
+			padding: 20px;
+		}
+	}
+	/* Clear floats after the columns */
+
+}

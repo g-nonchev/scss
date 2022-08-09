@@ -1,0 +1,168 @@
+@import '../generic/mixins';
+@import '../generic/variables';
+
+
+.m_page-title {
+    margin-top: 73px;
+    background-color: #FEB98A;
+    text-align: center;
+
+    .shell {
+        border-top: 2px solid #000;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    h1 {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 36px;
+        text-transform: uppercase;
+        padding-top: 5px;
+    }
+
+    .theme-header-separator {
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: 0px;
+    }
+}
+
+.m-contact-us-section {
+    .section__inner {
+        .section__content {
+            .section__body {
+                margin-bottom: 10px;
+
+                &-custom-text {
+                    font-family: "Roboto";
+                    font-size: 22px;
+                    text-align: center;
+                    padding-top: 30px;
+                    padding-bottom: 20px;
+                    color: #000000;
+                }
+
+                &-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    padding-top: 50px;
+
+                    &_contact-form {
+                        max-width: 600px;
+                        padding-right: 50px;
+
+                        .m-contact-us {
+                            &_row-flex {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+
+                                &_left {
+                                    margin-right: 30px;
+                                }
+
+                                &_right {
+                                    margin-left: 30px;
+                                }
+
+                                label {
+                                    font: normal normal 300 16px/36px "Apercu";
+                                    letter-spacing: 0.62px;
+                                    color: #CECECE;
+                                    opacity: 1;
+                                }
+                            }
+
+                            &_row {
+                                label {
+                                    font: normal normal 300 16px/36px "Apercu";
+                                    letter-spacing: 0.62px;
+                                    color: #CECECE;
+                                    opacity: 1;
+                                }
+
+                                .wpcf7-form-control-wrap {
+
+                                    input,
+                                    textarea {
+                                        background-color: transparent;
+                                        border: 0;
+                                        border-bottom: 1px solid #000;
+                                        color: #000;
+                                        display: block;
+                                        width: 100%;
+                                        padding: 7px 0;
+                                        margin-bottom: 30px;
+                                    }
+                                }
+                            }
+
+                            &_submit {
+                                text-align: center;
+
+                                input {
+                                    text-align: center;
+                                    letter-spacing: 2.02px;
+                                    color: #FFFFFF;
+                                    text-transform: uppercase;
+                                    width: 250px;
+                                    font-family: "Roboto";
+                                    background: #000;
+                                    font-size: 16px;
+                                    text-decoration: none;
+                                    border: 0;
+                                    -webkit-box-shadow: none;
+                                    box-shadow: none;
+                                    border-radius: 0;
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    appearance: none;
+                                    padding: 15px;
+
+                                    &:hover {
+                                        @include button-hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &_contact-info {
+                        padding-left: 50px;
+
+                        &_row {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            margin-top: 20px;
+
+                            &-img {
+                                width: 25px;
+                                height: auto;
+								margin: 0 20px;
+
+                            }
+
+                            &-text {
+                                font-family: "Roboto";
+                                font-size: 18px;
+                                color: #000000;
+                                padding-top: 5px;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

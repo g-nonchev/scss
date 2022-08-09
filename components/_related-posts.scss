@@ -1,0 +1,72 @@
+/* ------------------------------------------------------------ *\
+	Related posts
+\* ------------------------------------------------------------ */
+
+@import "../generic/mixins";
+@import "../generic/variables";
+
+.backg-gray {
+	background-color: $c-dbrown;
+}
+
+.related-posts {
+
+	&__author {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		&-name {
+			text-decoration: underline;
+		}
+		&:before {
+			content: "автор: ";
+			text-align: left;
+			float: left;
+			padding-right: 10px;
+		}
+	}
+
+	&__heading {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 40px;
+		padding-top: 20px;
+
+		h5 {
+			font-family: "Roboto";
+			font-weight: normal;
+		}
+	}
+
+	&__image {
+		background-color: $c-base;
+		padding: 10px;
+		border: 1px solid $c-dgold;
+	}
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	padding: 40px;
+
+	&__title {
+		font-family: "Roboto";
+		font-weight: 400;
+		font-size: 24px;
+		padding-top: 20px;
+	}
+
+	&--col-3 {
+		@media (min-width: 768px) {
+			-ms-flex: 0 0 33.333333%;
+			flex: 0 0 33.333333%;
+			max-width: 33.333333%;
+			padding: 40px;
+		}
+
+		padding: 20px;
+		position: relative;
+		width: 100%;
+	}
+}

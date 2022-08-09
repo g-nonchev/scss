@@ -1,0 +1,6 @@
+.fc .fc-toolbar {
+	@include breakpoint-down(mobile) {
+		flex-direction: column;
+	}
+
+}
